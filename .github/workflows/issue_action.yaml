@@ -35,8 +35,8 @@ jobs:
                '
            env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              ORGANISATION: ${{ github.event.owner.login }}
-              REPOSITORY: manzil-infinity180
+              ORGANISATION: manzil-infinity180
+              REPOSITORY: ${{ github.event.repository.name }}
               ISSUE_NUMBER: ${{ github.event.issue.number }}
 
                
