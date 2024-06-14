@@ -30,7 +30,10 @@ jobs:
        steps:
          - name: Created comment with Github APi
            run: |
-               curl -X POST -u ${{ secrets.GITHUB_TOKEN }}\
+               gh api \
+               --method POST \
+               -H "Accept: application/vnd.github+json" \
+               -H "X-GitHub-Api-Version: 2022-11-28" \
                http:\\api.github.com/repo/manzil-infinity180/${REPOSITORY}/issues/${ISSUE_NUMBER}/comment \
                -f body= '
                This comment is from Github API brrooooo
