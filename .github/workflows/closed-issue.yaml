@@ -3,6 +3,9 @@ on:
   issues:
      types:
         - closed
+  pull_request:
+     types:
+        - closed
 
 jobs:
    closed_label:
