@@ -16,3 +16,10 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.number }}
           LABELS: closed
+
+   comment-on-issue:
+       runs-on: ubuntu-latest
+       steps:
+        - name: "dump github actions"
+          run: echo '${{ toJSON(github.event ) }}' | jq
+          shell: bash
