@@ -7,8 +7,7 @@ on:
 jobs:
    closed_label:
       runs-on: ubuntu-latest
-      permissions:
-         issues: write-all
+      permissions: write-all
       steps:
         - run: gh pr edit "$NUMBER" --add-label "$LABELS"
       env:
