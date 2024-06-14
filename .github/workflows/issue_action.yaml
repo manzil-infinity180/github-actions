@@ -30,7 +30,7 @@ jobs:
        steps:
          - name: Created comment with Github APi
            run: |
-               gh api -X POST \
+               curl -X -X POST -u ${{ secrets.GITHUB_TOKEN }}\
                http:\\api.github.com/repo/manzil-infinity180/${REPOSITORY}/issues/${ISSUE_NUMBER}/comment \
                -f body= '
                This comment is from Github API brrooooo
