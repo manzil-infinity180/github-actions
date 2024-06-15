@@ -4,7 +4,6 @@ about: Which Testing is this?
 title: ''
 labels: Testing / Continuous Integration (CI), Awaiting Triage
 assignees: ''
-options: ['Homebrew', 'MacPorts']
 
 ---
 
