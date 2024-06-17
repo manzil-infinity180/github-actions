@@ -11,3 +11,5 @@ Welcome ----
 - [ ] - Security Section
 - [ ] - Basic Deployment (Versel/Render) only trigger when all the ci passed
 - [ ] - Other Add .....
+
+Target is before 25 JUNE
